@@ -6,7 +6,7 @@ import time
 
 # ========== Config (adjust your API key and model below) ==========
 OPENAI_KEY = os.environ['OPENAI_API_KEY']  # <-- replace with your OpenAI key
-AIDER_COMMAND = f"aider --model  o3-mini --api-key openai={OPENAI_KEY} --auto-accept-architect --no-auto-commits --yes-always --architect --no-auto-test"
+AIDER_COMMAND = f"aider --model  o3-mini --api-key openai={OPENAI_KEY} --auto-accept-architect --auto-commits --yes-always --architect --no-auto-test"
 
 # ========== Background Thread: Reads output from aider ==========
 def read_output(process, complete_logs, stop_event):

@@ -13,7 +13,7 @@ is_logging = False
 
 # ========== Config (adjust your API key and model below) ==========
 OPENAI_KEY = os.environ['OPENAI_API_KEY']  # <-- replace with your OpenAI key
-AIDER_COMMAND = f"aider --model 4o --api-key openai={OPENAI_KEY} --auto-accept-architect --no-auto-commits --yes-always --architect --no-auto-test"
+AIDER_COMMAND = f"aider --model 4o --api-key openai={OPENAI_KEY} --auto-accept-architect --auto-commits --yes-always --architect --no-auto-test"
 
 
 # Custom log handler
