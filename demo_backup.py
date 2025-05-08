@@ -113,3 +113,7 @@ if st.session_state.aider_running:
             st.success("🛑 Aider session stopped.")
 
 
+# Auto-refresh every 1s to simulate live stream
+if st.session_state.aider_running:
+    time.sleep(1)
+    st.rerun()
